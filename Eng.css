@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ff6600;
+}
+
+.navbar {
+    background: #ff6600;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+#navMenu {
+    display: none;
+}
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+
+.hero {
+    background: #e6f0ff;
+    padding: 40px;
+    text-align: center;
+}
+
+
+.section {
+    padding: 40px 20px;
+}
+.section.light {
+    background: #eef3ff;
+}
+
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+
+.primary {
+    background: #ff6600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTACT FORM */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* RESPONSIVE MENU */
+@media (min-width: 768px) {
+    #navMenu {
+        display: block !important;
+    }
+    .menu-btn {
+        display: none;
+    }
+    nav a {
+        margin: 0 15px;
+    }
+}
+
+/* Dean Section */
+.dean-section {
+    width: 100%;
+    background: #e9f1ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.dean-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.dean-card {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.dean-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #ff6a00;
+}
+
+.dean-info {
+    flex: 1;
+    text-align: left;
+}
+
+.dean-info h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.dean-description {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.message-btn {
+    padding: 10px 20px;
+    background: #ff6a00;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.message-btn:hover {
+    background: #e85c00;
+}
+
+
+@media (max-width: 768px) {
+    .dean-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dean-info {
+        text-align: center;
+    }
+}

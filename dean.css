@@ -1,0 +1,75 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f2f5f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popup-container {
+    background: #ffffff;
+    width: 380px;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.25s ease-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.25s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff7a00;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #e66900;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
